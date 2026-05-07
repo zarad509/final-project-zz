@@ -327,3 +327,8 @@ p {
 		border-left: 30px solid #eef2db;
 	}
 }
+
+.genre-description {
+	font-family:Arial, Helvetica, sans-serif;
+	color: #eef2db;
+}
