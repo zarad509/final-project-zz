@@ -9,22 +9,22 @@ const questions = [
 
             {
                 image: "./assets/question1/pop_room.png",
-                genre: "Pop"
+                genre: "POP"
             },
 
             {
                 image: "./assets/question1/rock_room.png",
-                genre: "Rock"
+                genre: "ROCK"
             },
 
             {
                 image: "./assets/question1/country_room.png",
-                genre: "Country"
+                genre: "COUNTRY"
             },
 
             {
                 image: "./assets/question1/hiphop_room.png",
-                genre: "Hip Hop"
+                genre: "HIP HOP"
             }
         ]
     },
@@ -38,22 +38,22 @@ const questions = [
 
             {
                 text: "SOCIAL",
-                genre: "Pop"
+                genre: "POP"
             },
 
             {
                 text: "REBELLIOUS",
-                genre: "Rock"
+                genre: "ROCK"
             },
 
             {
                 text: "TRADITIONAL",
-                genre: "Country"
+                genre: "COUNTRY"
             },
 
             {
                 text: "CONFIDENT",
-                genre: "Hip Hop"
+                genre: "HIP HOP"
             }
         ]
     },
@@ -67,22 +67,22 @@ const questions = [
 
             {
                 image: "./assets/question3/pop_guitar.png",
-                genre: "Pop"
+                genre: "POP"
             },
 
             {
                 image: "./assets/question3/rock_guitar.png",
-                genre: "Rock"
+                genre: "ROCK"
             },
 
             {
                 image: "./assets/question3/country_guitar.png",
-                genre: "Country"
+                genre: "COUNTRY"
             },
 
             {
                 image: "./assets/question3/hiphop_guitar.png",
-                genre: "Hip Hop"
+                genre: "HIP HOP"
             }
         ]
     },
@@ -96,22 +96,22 @@ const questions = [
 
             {
                 text: "JOYFUL",
-                genre: "Pop"
+                genre: "POP"
             },
 
             {
                 text: "PASSIONATE",
-                genre: "Rock"
+                genre: "ROCK"
             },
 
             {
                 text: "NOSTALGIC",
-                genre: "Country"
+                genre: "COUNTRY"
             },
 
             {
                 text: "PEACEFUL",
-                genre: "Hip Hop"
+                genre: "HIP HOP"
             }
         ]
     },
@@ -125,22 +125,22 @@ const questions = [
 
             {
                 image: "./assets/question5/pop_accessory.png",
-                genre: "Pop"
+                genre: "POP"
             },
 
             {
                 image: "./assets/question5/rock_accessory.png",
-                genre: "Rock"
+                genre: "ROCK"
             },
 
             {
                 image: "./assets/question5/country_accessory.png",
-                genre: "Country"
+                genre: "COUNTRY"
             },
 
             {
                 image: "./assets/question5/hiphop_accessory.png",
-                genre: "Hip Hop"
+                genre: "HIP HOP"
             }
         ]
     },
@@ -154,22 +154,22 @@ const questions = [
 
             {
                 image: "./assets/question7/pop_mode.png",
-                genre: "Pop"
+                genre: "POP"
             },
 
             {
                 image: "./assets/question7/rock_mode.png",
-                genre: "Rock"
+                genre: "ROCK"
             },
 
             {
                 image: "./assets/question7/country_mode.png",
-                genre: "Country"
+                genre: "COUNTRY"
             },
 
             {
                 image: "./assets/question7/hiphop_mode.png",
-                genre: "Hip Hop"
+                genre: "HIP HOP"
             }
         ]
     },
@@ -183,22 +183,22 @@ const questions = [
 
             {
                 image: "./assets/question9/pop_animal.png",
-                genre: "Pop"
+                genre: "POP"
             },
 
             {
                 image: "./assets/question9/rock_animal.png",
-                genre: "Rock"
+                genre: "ROCK"
             },
 
             {
                 image: "./assets/question9/country_animal.png",
-                genre: "Country"
+                genre: "COUNTRY"
             },
 
             {
                 image: "./assets/question9/hiphop_animal.png",
-                genre: "Hip Hop"
+                genre: "HIP HOP"
             }
         ]
     }
@@ -209,28 +209,64 @@ let currentQuestion = 0;
 
 let scores = {
 
-    Pop: 0,
-    Rock: 0,
-    Country: 0,
-    "Hip Hop": 0
+    POP: 0,
+    ROCK: 0,
+    COUNTRY: 0,
+    "HIP HOP": 0
 };
 
 const playlists = {
 
-    Pop: [
+    POP: [
 
         {
-            title: "Blinding Lights - The Weeknd",
-            url: "https://www.youtube.com/watch?v=4NRXx6U8ABQ"
+            title: "Thriller - Michael Jackson",
+            url: "https://youtu.be/sOnqjkJTMaA?si=OPXEqjQUSNaOjkc5"
         },
 
         {
-            title: "Levitating - Dua Lipa",
-            url: "https://www.youtube.com/watch?v=TUVcZfQe-Kw"
-        }
+            title: "Billie Jean - Michael Jackson",
+            url: "https://youtu.be/Zi_XLOBDo_Y?si=XmuJaeAoxCQDZ4BU"
+        },
+        {
+            title: "I Want It That Way - Backstreet Boys",
+            url: "https://youtu.be/4fndeDfaWCg?si=RPISylfeBfevjNlJ"
+        },
+
+        {
+            title: "Baby One More Time - Britney Spears",
+            url: "https://youtu.be/C-u5WLJ9Yk4?si=4OKv6DWtxVZCbfTH"
+        },
+        {
+            title: "Bad - Michael Jeans",
+            url: "https://youtu.be/Sd4SJVsTulc?si=5S52f-wukBZ5jOvi"
+        },
+
+        {
+            title: "Poker Face - Lady Gaga",
+            url: "https://youtu.be/bESGLojNYSo?si=pudPAOZat4NAQDx8"
+        },
+        {
+            title: "I Will Always Love You - Whitney Houston",
+            url: "https://youtu.be/3JWTaaS7LdU?si=MHJwK4i9-lqR9mlA"
+        },
+
+        {
+            title: "Call Me Maybe - Carly Rae Jepsen",
+            url: "https://youtu.be/fWNaR-rxAic?si=B0AYrVa3p_AAsSyT"
+        },
+        {
+            title: "Someone Like You - Adele",
+            url: "https://youtu.be/hLQl3WQQoQ0?si=CyXswdECtns6wbyd"
+        },
+
+        {
+            title: "Purple Rain - Prince",
+            url: "https://youtu.be/ryT-ltTDCko?si=1J70OCw0TM3mme4V"
+        },
     ],
 
-    Rock: [
+    ROCK: [
 
         {
             title: "Bohemian Rhapsody - Queen",
@@ -238,35 +274,143 @@ const playlists = {
         },
 
         {
+            title: "Stairway to Heaven - Led Zeppelin",
+            url: "https://youtu.be/QkF3oxziUI4?si=_sI3LT6KIqXji5lx"
+        },
+        {
             title: "Smells Like Teen Spirit - Nirvana",
-            url: "https://www.youtube.com/watch?v=hTWKbfoikeg"
-        }
-    ],
-
-    Country: [
-
-        {
-            title: "Country Roads - John Denver",
-            url: "https://www.youtube.com/watch?v=1vrEljMfXYo"
+            url: "https://youtu.be/hTWKbfoikeg?si=yFyJIx-idH8vtDkW"
         },
 
         {
-            title: "Tennessee Whiskey - Chris Stapleton",
-            url: "https://www.youtube.com/watch?v=4zAThXFOy2c"
-        }
-    ],
-
-    "Hip Hop": [
-
+            title: "Numb - Linkin Park",
+            url: "https://youtu.be/kXYiU_JCYtU?si=cAUkNqtyyr0mftK5"
+        },
         {
-            title: "HUMBLE. - Kendrick Lamar",
-            url: "https://www.youtube.com/watch?v=tvTRZJ-4EyI"
+            title: "Hey Jude - The Beatles",
+            url: "https://youtu.be/A_MjCqQoLLA?si=CrthvS520I8LZipY"
         },
 
         {
-            title: "Lose Yourself - Eminem",
-            url: "https://www.youtube.com/watch?v=_Yhyp-_hX2s"
-        }
+            title: "Sweet Child O’ Mine - Guns N’ Roses",
+            url: "https://youtu.be/1w7OgIMMRc4?si=qnmUzsa-B-UQF6ha"
+        },
+        {
+            title: "Back In Black  - AC/DC",
+            url: "https://youtu.be/pAgnJDJN4VA?si=QehKpvBchrLlBzUR"
+        },
+
+        {
+            title: "Welcome To The Jungle - Guns N’ Roses",
+            url: "https://youtu.be/o1tj2zJ2Wvg?si=ok_qXD5K3Tpx3AUY"
+        },
+        {
+            title: "Comfortably Numb - Pink Floyd",
+            url: "https://youtu.be/_FrOQC-zEog?si=mK5FcqKQk4aVgGQb"
+        },
+
+        {
+            title: "Boulevard of Broken Dreams - Green Day",
+            url: "https://youtu.be/Soa3gO7tL-c?si=AaLfsN7JMTod5a0n"
+        },
+    ],
+
+    COUNTRY: [
+
+        {
+            title: "He Stopped Loving Her Today - George Jones",
+            url: "https://youtu.be/zpEew3M-Kvg?si=Xyf5bBZBAWMN_pp0"
+        },
+
+        {
+            title: "Ring Of Fire - Johnny Cash",
+            url: "https://youtu.be/1WaV2x8GXj0?si=5tgRtcd0QiHLEuTj"
+        },
+        {
+            title: "Song Of The South - Alabama",
+            url: "https://youtu.be/lHdXQAQHjd8?si=NgpYC5arY4nPOPpj"
+        },
+
+        {
+            title: "A Country Boy Can Survive - Hank Williams, Jr.",
+            url: "https://youtu.be/3cQNkIrg-Tk?si=4ZJYSDh0BYovI2VF"
+        },
+        {
+            title: "Love Story - Taylor Swift",
+            url: "https://youtu.be/8xg3vE8Ie_E?si=G1A2r-koHwvLh7vB"
+        },
+
+        {
+            title: "Hurt - Johnny Cash",
+            url: "https://youtu.be/8AHCfZTRGiI?si=uMTtjNgkvD3P4AHt"
+        },
+        {
+            title: "Amarillo By Morning - George Strait",
+            url: "https://youtu.be/wtVeDaZxAXo?si=2nxzXJIHZR_A0MZe"
+        },
+
+        {
+            title: "I Walk The Line - Johnny Cash",
+            url: "https://youtu.be/J-6fW66IUY4?si=me4As8FVBwRYRiUh"
+        },
+        {
+            title: "Folsom Prison Blues - Johnny Cash",
+            url: "https://youtu.be/AeZRYhLDLeU?si=Oo8HYPEFthKkUoDx"
+        },
+
+        {
+            title: "Crazy - Patsy Cline",
+            url: "https://youtu.be/7PqtUULmZSE?si=EJLBouf1YjuvwNQQ"
+        },
+    ],
+
+    "HIP HOP": [
+
+        {
+            title: "Rapper's Delight - The Sugarhill Gang",
+            url: "https://youtu.be/ZjRi-S7J70Y?si=4WnlOBWqf0eSQ7rA"
+        },
+
+        {
+            title: "The Message - Grandmaster Flash and the Furious Five",
+            url: "https://youtu.be/gYMkEMCHtJ4?si=K2Ja6B58U54q5ggx"
+        },
+        {
+            title: "Fight the Power - Public Enemy",
+            url: "https://youtu.be/mmo3HFa2vjg?si=mN36h8v6kSRls8me"
+        },
+
+        {
+            title: "Nuthin' But a 'G' Thang - Dr.Dre feat. Snoop Dogg",
+            url: "https://youtu.be/8GliyDgAGQI?si=89XcESu_ykgKWbUI"
+        },
+        {
+            title: "Juicy - The Notorius B.I.G",
+            url: "https://youtu.be/_JZom_gVfuw?si=muWsMgfRRyivEifJ"
+        },
+
+        {
+            title: "California Love - 2Pac feat. Dr.Dre",
+            url: "https://youtu.be/J7_bMdYfSws?si=vntehbqKmHEINZ8D"
+        },
+        {
+            title: "Stan - Eminem feat. Dido",
+            url: "https://youtu.be/gOMhN-hfMtY?si=Xez3o6CJZRUtccGf"
+        },
+
+        {
+            title: "99 Problems - Jay-Z",
+            url: "https://youtu.be/M7wfjjgmjwU?si=LJRyKq7TtAu15ic1"
+        },
+        {
+            title: "Alright - Kendrick Lamar",
+            url: "https://youtu.be/JocAXINz-YE?si=bhUHsOnEzjeqsY3O"
+        },
+
+        {
+            title: "Sicko Mode - Travis Scott",
+            url: "https://youtu.be/6ONRf7h3Mdk?si=1aMG581fazGdazgI"
+        },
     ]
 };
 
@@ -406,10 +550,10 @@ function restartQuiz() {
 
     scores = {
 
-        Pop: 0,
-        Rock: 0,
-        Country: 0,
-        "Hip Hop": 0
+        POP: 0,
+        ROCK: 0,
+        COUNTRY: 0,
+        "HIP HOP": 0
     };
 
     
@@ -449,10 +593,10 @@ function goHome() {
 
     scores = {
 
-        Pop: 0,
-        Rock: 0,
-        Country: 0,
-        "Hip Hop": 0
+        POP: 0,
+        ROCK: 0,
+        COUNTRY: 0,
+        "HIP HOP": 0
     };
 
     document
