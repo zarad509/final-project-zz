@@ -412,7 +412,81 @@ function restartQuiz() {
         "Hip Hop": 0
     };
 
+    
     showQuestion();
 }
 
-showQuestion();
+// ======================
+// START QUIZ
+// ======================
+
+function startQuiz() {
+
+    document
+        .getElementById("start-screen")
+        .classList
+        .add("hidden");
+
+    document
+        .getElementById("quiz-wrapper")
+        .classList
+        .remove("hidden");
+
+    const music = document.getElementById("bgMusic");
+
+    music.play();
+
+    showQuestion();
+}
+
+// ======================
+// HOME BUTTON
+// ======================
+
+function goHome() {
+
+    currentQuestion = 0;
+
+    scores = {
+
+        Pop: 0,
+        Rock: 0,
+        Country: 0,
+        "Hip Hop": 0
+    };
+
+    document
+        .getElementById("quiz-wrapper")
+        .classList
+        .add("hidden");
+
+    document
+        .getElementById("start-screen")
+        .classList
+        .remove("hidden");
+}
+
+// ======================
+// MUSIC TOGGLE
+// ======================
+
+function toggleMusic() {
+
+    const music = document.getElementById("bgMusic");
+
+    const button = document.getElementById("musicBtn");
+
+    if (music.paused) {
+
+        music.play();
+
+        button.innerText = "MUSIC: ON";
+
+    } else {
+
+        music.pause();
+
+        button.innerText = "MUSIC: OFF";
+    }
+}
+

@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="./assets/css/styles.css">
 
-    <!-- Fonts -->
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,62 @@
 
 <body class="background">
 
-    <div class="container py-5">
+    <!-- musik -->
+    <audio
+        id="bgMusic"
+        loop>
+
+        <source
+            src="./assets/audio/music.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+    <!-- start -->
+    <div
+        id="start-screen"
+        class="start-screen">
+
+        <img
+            src="./assets/img/vinyl.gif"
+            class="vinyl-gif"
+            alt="vinyl gif">
+
+        <h1>MUSIC PERSONALITY QUIZ</h1>
+
+        <div
+    class="play-btn"
+    onclick="startQuiz()">
+</div>
+
+    </div>
+
+    <!-- actual quiz -->
+    <div
+        class="container py-5 hidden"
+        id="quiz-wrapper">
+
+        <!-- top btns -->
+        <div class="top-buttons">
+
+            <button
+                class="small-btn"
+                onclick="goHome()">
+
+                HOME
+
+            </button>
+
+            <button
+                class="small-btn"
+                id="musicBtn"
+                onclick="toggleMusic()">
+
+                MUSIC: ON
+
+            </button>
+
+        </div>
 
         <div id="quiz-container"></div>
 

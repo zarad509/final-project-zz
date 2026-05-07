@@ -1,3 +1,7 @@
+/* =========================
+   all
+========================= */
+
 html,
 body {
 	width: 100%;
@@ -9,7 +13,12 @@ body {
 body {
 	background-color: black;
 	font-family: Arial, sans-serif;
+	overflow-x: hidden;
 }
+
+/* =========================
+   bg
+========================= */
 
 .background {
 	background-image: url("../img/background.png");
@@ -19,12 +28,17 @@ body {
 	min-height: 100vh;
 }
 
+/* =========================
+   font
+========================= */
+
 h1 {
 	font-size: clamp(2rem, 6vw, 5rem);
 	font-family: "Baskervville SC", serif;
 	text-align: center;
 	color: #eef2db;
 	margin-bottom: 1rem;
+	text-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 p {
@@ -34,6 +48,144 @@ p {
 	color: #eef2db;
 }
 
+/* =========================
+   start screen
+========================= */
+
+.start-screen {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* full size gif */
+
+.vinyl-gif {
+	position: absolute;
+	inset: 0;
+
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+
+	z-index: 1;
+}
+
+/* dark overlay */
+
+.start-screen::after {
+	content: "";
+
+	position: absolute;
+	inset: 0;
+
+	background: rgba(0, 0, 0, 0.45);
+
+	z-index: 2;
+}
+
+/* start */
+
+.start-screen h1 {
+	position: relative;
+	z-index: 3;
+	margin-bottom: 2rem;
+}
+
+/* =========================
+   pla y btn
+========================= */
+
+.play-btn {
+	position: relative;
+	z-index: 3;
+
+	width: 120px;
+	height: 120px;
+
+	border-radius: 50%;
+
+	border: 4px solid #eef2db;
+
+	background: rgba(255,255,255,0.12);
+
+	backdrop-filter: blur(5px);
+
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: 0.3s ease;
+}
+
+.play-btn:hover {
+	transform: scale(1.08);
+	background: rgba(255,255,255,0.2);
+}
+
+/* play icon */
+
+.play-btn::before {
+	content: "";
+
+	margin-left: 8px;
+
+	width: 0;
+	height: 0;
+
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+
+	border-left: 38px solid #eef2db;
+}
+
+/* =========================
+   hidden
+========================= */
+
+.hidden {
+	display: none;
+}
+
+/* =========================
+   top btns
+========================= */
+
+.top-buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.small-btn {
+	background: #eef2db;
+	color: black;
+	border: none;
+	padding: 0.8rem 1.5rem;
+	border-radius: 999px;
+	font-family: "Limelight", sans-serif;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.small-btn:hover {
+	transform: scale(1.05);
+}
+
+/* =========================
+   grid
+========================= */
+
 .answer-grid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -42,74 +194,67 @@ p {
 	align-items: start;
 }
 
-/* IMAGE ANSWERS */
+/* =========================
+   img answers
+========================= */
+
 .answer-card {
 	width: 100%;
-	aspect-ratio: 2 / 3; 
+
+	/* portrait cards */
+	aspect-ratio: 2 / 3;
+
 	border-radius: 30px;
+
 	border: 8px solid #8aa8a6;
+
 	background-size: cover;
 	background-position: center;
+
 	cursor: pointer;
+
 	transition: transform 0.3s ease;
 }
 
-/* TEXT ANSWERS */
+.answer-card:hover {
+	transform: scale(1.03);
+}
+
+/* =========================
+   txt answers
+========================= */
+
 .text-card {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	text-align: center;
+
 	background: #eef2db;
 	color: #1a1a1a;
+
 	font-size: clamp(1rem, 2vw, 2rem);
+
 	font-family: "Baskervville SC", serif;
+
 	padding: 1rem;
 
-	
+	/* square */
 	aspect-ratio: 1 / 1;
 }
 
-
-.answer-card:hover {
-	transform: scale(1.03);
-}
-
-
-@media (max-width: 992px) {
-
-	.answer-grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-@media (max-width: 576px) {
-
-	.answer-grid {
-		grid-template-columns: 1fr;
-	}
-}
-
-.answer-card:hover {
-	transform: scale(1.03);
-}
-
-.text-card {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #eef2db;
-	color: #1a1a1a;
-	font-size: 2rem;
-	font-family: "Baskervville SC", serif;
-	text-align: center;
-	padding: 2rem;
-}
+/* =========================
+   results
+========================= */
 
 .result-box {
 	background: rgba(0, 0, 0, 0.7);
+
 	padding: 3rem;
+
 	border-radius: 30px;
+
 	text-align: center;
 }
 
@@ -134,21 +279,51 @@ p {
 
 .restart-btn {
 	margin-top: 2rem;
+
 	padding: 1rem 2rem;
+
 	border: none;
-	border-radius: 20px;
+
+	border-radius: 999px;
+
 	background: #eef2db;
+
 	font-size: 1rem;
+
 	cursor: pointer;
+
+	font-family: "Limelight", sans-serif;
 }
 
-@media (max-width: 768px) {
+/* =========================
+   tablet
+========================= */
+
+@media (max-width: 992px) {
+
+	.answer-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* =========================
+   mobile
+========================= */
+
+@media (max-width: 576px) {
 
 	.answer-grid {
 		grid-template-columns: 1fr;
 	}
 
-	.answer-card {
-		height: 250px;
+	.play-btn {
+		width: 90px;
+		height: 90px;
+	}
+
+	.play-btn::before {
+		border-top: 18px solid transparent;
+		border-bottom: 18px solid transparent;
+		border-left: 30px solid #eef2db;
 	}
 }
