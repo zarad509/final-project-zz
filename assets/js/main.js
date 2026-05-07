@@ -146,6 +146,35 @@ const questions = [
     },
 
     {
+        question: "WHAT'S YOUR FAVORITE COLOR?",
+
+        type: "text",
+
+        answers: [
+
+            {
+                text: "PINK",
+                genre: "POP"
+            },
+
+            {
+                text: "RED",
+                genre: "ROCK"
+            },
+
+            {
+                text: "GREEN",
+                genre: "COUNTRY"
+            },
+
+            {
+                text: "BLUE",
+                genre: "HIP HOP"
+            }
+        ]
+    },
+
+    {
         question: "HOW DO YOU LISTEN TO MUSIC?",
 
         type: "image",
@@ -169,6 +198,35 @@ const questions = [
 
             {
                 image: "./assets/question7/hiphop_mode.png",
+                genre: "HIP HOP"
+            }
+        ]
+    },
+
+    {
+        question: "WHEN DO YOU LISTEN TO MUSIC?",
+
+        type: "text",
+
+        answers: [
+
+            {
+                text: "AFTERNOON",
+                genre: "POP"
+            },
+
+            {
+                text: "MIDNIGHT",
+                genre: "ROCK"
+            },
+
+            {
+                text: "MORNING",
+                genre: "COUNTRY"
+            },
+
+            {
+                text: "EVENING",
                 genre: "HIP HOP"
             }
         ]
@@ -201,7 +259,36 @@ const questions = [
                 genre: "HIP HOP"
             }
         ]
-    }
+    },
+
+    {
+        question: "WHICH DO YOU PREFER?",
+
+        type: "text",
+
+        answers: [
+
+            {
+                text: "SOLO FEMALE ARTIST",
+                genre: "POP"
+            },
+
+            {
+                text: "BAND",
+                genre: "ROCK"
+            },
+
+            {
+                text: "SOLO MALE ARTIST",
+                genre: "COUNTRY"
+            },
+
+            {
+                text: "MIX OF EVERYTHING",
+                genre: "HIP HOP"
+            }
+        ]
+    },
 
 ];
 
