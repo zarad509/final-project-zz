@@ -481,6 +481,14 @@ function selectAnswer(genre) {
     }
 }
 
+const descriptions = {
+    POP: "From relatable lyrics to catchy melodies, pop music began in the mid-20th centuries as an accessible and marketable genre. It stemmed from genres like jazz, country, and folk and evolved from genres such as disco and funk. Pop artists are known for their iconic images, outstanding dance performances, and outstanding vocals. Iconic bands have come out of pop music such as NSYNC and Fifth Harmony, but also amazing soloists like Beyonce and Lady Gaga. (images: google info: brittanica)",
+    ROCK: "Dominating the 1950s, rock music is a genre which popularized in English speaking countries with its strong instrumentals. Electric guitar is one of the most prevalent instruments in rock alongside the drums! While everyone may want to be a rockstar some popular names pertain to The Beatles and Bob Dylan. With lyrics that hold meaning and performances which can shake a stadium, rock makes a statement no matter the time of day. (images: google info: brittanica)",
+    COUNTRY: "Originating from the West and South of America, country music was the evolution from hillbilly music. While country music began with folk and ballad songs, it evolved so much throughout the 20th century to even be popularly mixed with the pop genre. There’s a lot of instruments used in the country such as guitar, fiddle, banjo, and so much more. Perfect for line dancing, you can find yourself enjoying artists like Dolly Parton and Johnny Cash! (images: google info: brittanica)",
+    "HIP HOP": "Starting as a cultural movement in the 1980s- 1990s, hiphop is an influential genre with a rhythmic style. Hip hop is often connected to dance such as “b-boying” and other art styles like graffiti as it is a genre originated from African American culture in America. With its everlasting influence, hip hop has become a genre full of artistic expression and meaningful messages that will stick in your head with artists ranging from Kendrick Lamar to Drake. (images: google info: brittanica)",
+
+};
+
 function showResults() {
 
     let highest = 0;
@@ -504,6 +512,8 @@ function showResults() {
         <div class="result-box">
 
             <h1>YOUR MUSIC GENRE IS ${winner}! 🎵</h1>
+
+            <p class="genre-description">${descriptions[winner]}</p>
 
             <p>Recommended Playlist:</p>
 
@@ -633,4 +643,6 @@ function toggleMusic() {
         button.innerText = "MUSIC: OFF";
     }
 }
+
+
 
